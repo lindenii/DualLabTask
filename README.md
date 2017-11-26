@@ -1,4 +1,4 @@
-# lindenii-front-end-course
+# lindenii
 
 Darya Ramanchuk
 BSUIR
