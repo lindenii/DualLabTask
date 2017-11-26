@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exchange rates</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.css">
+
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div>Dual Lab task</div>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="selectTypeOfCurrency"><label>Выберете валюту</label>
+                <select id="typeOfCurrency" class="button selectCurrency">
+                    <option value=145 selected class="fieldWrapCurrency">USD</option>
+                    <option value=298 class="fieldWrapCurrency">RUR</option>
+                    <option value=292 class="fieldWrapCurrency">EUR</option>
+                </select>
+            </div>
+
+            <section id="createDiagram">
+                <div id="diagram" class="diargam"></div>
+                <div class="buttonsForDiagram">
+                <span id="period">
+                 с: <input type="date" name="date" class="fieldWrap" id="startDate">
+                 по:<input type="date" name="date" class="fieldWrap" id="endDate"></span>
+                    <input type="button" id="exportDiagramValues" value="export to CVS" class="button"/>
+                    <input type="button" id="createTableOfCurrencies" value="табличные вид" class="button"/>
+                </div>
+            </section>
+
+            <section id="createCurrenciesTable" class="createCurrenciesTable">
+                <div class="buttonsForTable">
+                    <input type="button" id="exportTableToCSV" value="CSV File" class="button"/>
+                    <input type="button" id="backToDiagram" value="вернуться назад" class="button"/>
+                </div>
+                <div id="resultsOfTable" class="currencyResultsOfTable">
+                    <input type="button" id="deleteTd" value="-" class="button buttonPlusMinus"/>
+                    <input type="button" id="insertTable" value="+" class="button buttonPlusMinus"/>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper cooperation"> More details you can clarity by following phone:
+            <a href="tel:+375447632309" class="phoneNumber">+375 44 763 23 09</a>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.js"></script>
+
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script src="js/gettingCurrency.js"></script>
+</body>
+</html>

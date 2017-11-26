@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+}
+*, *::after, *::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    width:100%;
+    height:100%;
+}
+body{
+    background-color: rgba(60, 85, 109, 0.02);
+    display: flex;
+    flex-direction: column;
+    font:18px Arial;
+}
+main{
+    flex: 1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    background-color: rgba(52, 73, 94, 0.8);
+    min-height: 50px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 100%;
+    padding: 20px;
+}
+
+.button{
+    width: 150px;
+    color: rgba(255, 255, 255, 1);
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    line-height: 21px;
+    background: rgba(18, 132, 110, 0.67);
+    transition: 0.3s;
+    padding: 12px 20px;
+    border-radius: 3px;
+    margin: 10px;
+    box-shadow: 0 5px 0 rgba(18, 132, 110, 0.95);
+}
+
+.button:hover{
+    background-color: rgba(18, 132, 110, 0.95);;
+}
+.fieldWrap{
+    border: 2px solid #bdc3c7;
+    color: #34495e;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.467;
+    padding: 12px 5px;
+    border-radius: 6px;
+    box-shadow: none;
+    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+    transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+    margin: 10px;
+}
+
+
+.fieldWrap:focus {
+    border-color: #1abc9c;
+    outline: 0;
+    box-shadow: none;
+}
+
+.selectTypeOfCurrency{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.selectCurrency{
+    width:100%;
+    margin: 20px 0;
+
+}
+label{
+    padding: 10px;
+}
+.diargam{
+    margin: 20px 0;
+}
+.buttonsForDiagram{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.buttonPlusMinus{
+    margin: 2px 0px 5px 2px;
+    padding: 0px 20px;
+    max-width: 5px;
+}
+
+option.fieldWrapCurrency {
+    color: rgba(255, 255, 255, 1);
+    padding: 8px 16px;
+    background-color: rgba(60, 85, 109, 0.5);
+}
+.buttonsForTable{
+    margin: 20px -10px;
+    padding: 20px 0;
+}
+.createCurrenciesTable{
+    display:flex;
+    flex-direction: column;
+}
+footer{
+    background-color: rgba(52, 73, 94,1);
+    color: rgba(255, 255, 255, 1);
+    min-height: 20px;
+    display: flex;
+    font-size: 10px;
+}
+.cooperation{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+.phoneNumber{
+    color: rgb(224, 224, 224);
+
+
+}
+.phoneNumber:hover{
+    color: rgb(149, 161, 184);
+}
+td,tr{
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+.currencyResultsOfTable{
+    display: flex;
+}
